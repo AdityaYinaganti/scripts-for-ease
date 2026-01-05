@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Usage: ./your_script_name.sh <cluster_name>
 CLUSTER_NAME="$1"
 
 if [ -z "$CLUSTER_NAME" ]; then
@@ -22,7 +21,6 @@ open_url() {
 }
 
 echo "Checking network connectivity to ${CLUSTER_NAME}-gke.k8s.dev.bb.schrodinger.com on port 443..."
-# Using -z for a simple connection check so it doesn't hang
 nc -zv "${CLUSTER_NAME}-gke.k8s.dev.bb.schrodinger.com" 443
 
 echo -e "\nGetting credentials for cluster '${CLUSTER_NAME}'..."
@@ -34,9 +32,6 @@ kubectl config current-context
 echo -e "\nOpening KOTS admin console..."
 echo "The console usually runs at http://localhost:8800"
 
-# Run the open command in the background after a 3-second delay 
-# to give the tunnel time to initialize.
 (sleep 3; open_url "http://localhost:8800") &
 
-# Start the admin console (this will stay running in the foreground)
 kubectl kots admin-console -n replicated
