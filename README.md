@@ -17,6 +17,8 @@ python helm_maker.py -l 15 -n 100 -o my_peptides.csv
 ## Pod running and entering
 This bash script can be used to get into the pod by giving 2 inputs
 
+## Usage
+
  ### Bash script
  Runt he script with necessary flags for server ('-s') and the pod name ('-p')
  bash server_and_pod.sh -p ld-accessories -s qa-demo-26-1
