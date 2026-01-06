@@ -27,6 +27,6 @@ This bash script can be used to get into the pod by giving 2 inputs
  This bash script can be used to login to the replicated console whenever the user wants to redeploy the server. 
 
  ### Bash script
- Run the sript with no flags but the name of the server you want to access the replicated server for
+ Run the sript with no flags but the name of the server you want to access the replicated server for.
  bash console.sh qa-demo-26-1
 
