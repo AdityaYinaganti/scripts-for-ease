@@ -28,5 +28,6 @@ This bash script can be used to get into the pod by giving 2 inputs
 
  ### Bash script
  Run the sript with no flags but the name of the server you want to access the replicated server for.
+ 
  bash console.sh qa-demo-26-1
 
