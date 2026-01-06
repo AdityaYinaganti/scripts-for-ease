@@ -33,3 +33,21 @@ This bash script can be used to get into the pod by giving 2 inputs
  
  bash console.sh qa-demo-26-1
 
+ ## Usage
+ ### Python script
+ Run the script with necessary flag to generate SMILES string. 
+
+ ### Requirements
+ Install rdkit in the system to run the code successfully. 
+
+ pip install rdkit
+
+ ### Running the script
+ Run the script with necessary flags for number of rows ('-r' or '--rows'), output file name ('-o' or '--output') and and and an optional flag for maximum length of the SMILES string ('-s' or '--size'). 
+
+ python chemistry_maker.py --rows 10 --output my_file.csv --size 10 #--size is optional
+
+ OR 
+
+ python chemistry_maker.py -r 10 -o my_file.csv -s 10  #-s is optional
+
