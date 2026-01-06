@@ -51,3 +51,18 @@ This bash script can be used to get into the pod by giving 2 inputs
 
  python chemistry_maker.py -r 10 -o my_file.csv -s 10  #-s is optional
 
+## Usage 
+### Python script
+Similar code to that of chemistry_maker.py but instead of using only certain elements, it will use the whole periodic table. 
+
+### Requirements 
+Install rdkit in the system to run the code successfully. 
+
+pip install rdkit
+
+### Running the script 
+python chemistry_maker_alternate.py -r 10 -s 100 -o my_smiles.csv
+
+OR 
+
+python chemistry_maker_alternate.py --rows --s 100 --output my_smiles.csv
