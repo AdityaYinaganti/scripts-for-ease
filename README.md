@@ -66,3 +66,18 @@ python chemistry_maker_alternate.py -r 10 -s 100 -o my_smiles.csv
 OR 
 
 python chemistry_maker_alternate.py --rows --s 100 --output my_smiles.csv
+
+## Usage 
+### Python script 
+e_z_isomers.py code will create 2 CSV which will have E and Z isomers respectively. 
+
+### Requirements
+Install rdkit in the system to run the code successfully. 
+
+pip install rdkit
+
+### Running the script
+
+python e_z_isomers.py --rows 100 -e e_isomers.csv -z z_isomers.csv
+
+--rows is a required argument and '-e' and '-z' is not required. It will take a default value. 
