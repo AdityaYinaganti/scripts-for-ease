@@ -81,3 +81,14 @@ pip install rdkit
 python e_z_isomers.py --rows 100 -e e_isomers.csv -z z_isomers.csv
 
 --rows is a required argument and '-e' and '-z' is not required. It will take a default value. 
+
+## Usage
+### Python script
+Run the scripts to create tautomers with stereoisomers in a CSV file. 
+
+### Requirements 
+Install rdkit locally
+pip install rdkit
+
+### Running the script
+python create_tautomers_with_stereo.py -n < Number of SMILES for which you want tautomers of stereoisomers> -o < Output File Name >
