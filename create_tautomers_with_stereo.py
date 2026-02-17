@@ -33,7 +33,7 @@ def generate_stereo_tautomers(n_parents, output_file):
         # Joining multiple fragments to create a more complex molecules. 
         f1 = random.choice(frag_pool)
         f2 = random.choice(frag_pool)
-        combined_smiles = f"{f1}.{f2}"
+        combined_smiles = f"{f1}{f2}"
         mol = Chem.MolFromSmiles(combined_smiles)
         
         if not mol: continue
